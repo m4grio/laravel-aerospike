@@ -1,0 +1,26 @@
+{
+  "name": "m4grio/laravel-aerospike",
+  "description": "Aerospike' stuff for Laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mario Álvarez",
+      "email": "ahoy@m4grio.me"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.5.9",
+    "aerospike/aerospike-client-php": "dev-master",
+    "illuminate/support": "5.0.*|5.1.*"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^3.0@dev",
+    "contorion/aerospike-stub": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Magrio\\Laravel\\": "src/"
+    }
+  }
+}
