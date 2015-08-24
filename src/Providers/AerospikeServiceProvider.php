@@ -20,6 +20,8 @@ class AerospikeServiceProvider extends ServiceProvider
      */
     protected $defer = true;
 
+    const PROVIDES = 'aerospike';
+
     /**
      * Boots the provider
      *
@@ -37,8 +39,8 @@ class AerospikeServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('aerospike', function ($app) {
-            $config = $app['config']['aerospike'];
+        $this->app->singleton(static::PROVIDES, function ($app) {
+            $config = $app['config'][static::PROVIDES];
             $as = new Aerospike($config['client'], $config['persistent'], $config['options']);
 
             return $as;
@@ -50,7 +52,7 @@ class AerospikeServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['aerospike'];
+        return [static::PROVIDES];
     }
 
     /**
@@ -61,7 +63,7 @@ class AerospikeServiceProvider extends ServiceProvider
     protected function bootConfig()
     {
         $source = realpath(__DIR__.'/../config/aerospike.php');
-        $this->mergeConfigFrom($source, 'aerospike');
+        $this->mergeConfigFrom($source, static::PROVIDES);
 
         return $this;
     }
