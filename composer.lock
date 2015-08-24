@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f2f30ec50d50f91eaf01769504bd0d9c",
+    "hash": "d37d679b12c39082a5ae4fb4c2736455",
     "packages": [
         {
             "name": "aerospike/aerospike-client-php",
@@ -322,12 +322,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "9d6f51b62bf45eb7a0a13b447236e72ac5b74240"
+                "reference": "aa23bab9b4e0e1925905cd17ea6cd95dcc99963d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/9d6f51b62bf45eb7a0a13b447236e72ac5b74240",
-                "reference": "9d6f51b62bf45eb7a0a13b447236e72ac5b74240",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/aa23bab9b4e0e1925905cd17ea6cd95dcc99963d",
+                "reference": "aa23bab9b4e0e1925905cd17ea6cd95dcc99963d",
                 "shasum": ""
             },
             "require": {
@@ -373,20 +373,19 @@
                 "debug",
                 "dump"
             ],
-            "time": "2015-08-22 07:44:28"
+            "time": "2015-08-24 07:21:16"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "aerospike/aerospike-client-php": 20,
         "symfony/var-dumper": 20,
         "contorion/aerospike-stub": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">5.4"
+        "php": ">=5.5.9"
     },
     "platform-dev": []
 }
