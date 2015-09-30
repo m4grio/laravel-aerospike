@@ -1,9 +1,9 @@
 <?php
 
-namespace Magrio\Laravel\Facades;
+namespace m4grio\LaravelAerospike\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Magrio\Laravel\Providers\AerospikeServiceProvider;
+use m4grio\LaravelAerospike\Providers\AerospikeServiceProvider;
 
 /**
  * Aerospike Facade

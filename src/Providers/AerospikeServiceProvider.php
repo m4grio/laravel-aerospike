@@ -1,6 +1,6 @@
 <?php
 
-namespace Magrio\Laravel\Providers;
+namespace m4grio\LaravelAerospike\Providers;
 
 use Aerospike;
 use Illuminate\Support\ServiceProvider;
@@ -64,6 +64,7 @@ class AerospikeServiceProvider extends ServiceProvider
     {
         $source = realpath(__DIR__.'/../config/aerospike.php');
         $this->mergeConfigFrom($source, static::PROVIDES);
+        $this->publishes([$source => config_path()]);
 
         return $this;
     }
